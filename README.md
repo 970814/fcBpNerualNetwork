@@ -100,8 +100,8 @@
     
 
 
+#### 主要参考资料
 
-
-
+- [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/chap1.html) 
 
     
