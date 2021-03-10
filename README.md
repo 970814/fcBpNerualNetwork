@@ -16,7 +16,11 @@
 ### 算法细节
 
 1. 使用反向传播算法计算梯度dw和db
+   
+
    <img width="249" alt="4个基本方程" src="https://user-images.githubusercontent.com/19931702/110571270-46533a80-8192-11eb-8fc0-6975d421bae0.png">
+
+
 2. 采用L2正则化
 3. 采用随机梯度下降算法
     - min-batch大小为10
