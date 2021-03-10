@@ -74,5 +74,6 @@
 
 
 ### 反向传播算法中4个重要方程
-![1](http://latex.codecogs.com/svg.latex?\\delta^{L}=\\frac{\\partial C}{\\partial z^{L}}=a^L-y)
+<img width="249" alt="截屏2021-03-10 上午11 07 26" src="https://user-images.githubusercontent.com/19931702/110571270-46533a80-8192-11eb-8fc0-6975d421bae0.png">
+
 
