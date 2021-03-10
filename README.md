@@ -4,7 +4,7 @@
 
 ##### 手写数字识别0～9
 
-1. 使用mnist训练集
+1. 使用[mnist训练集](http://neuralnetworksanddeeplearning.com/chap4.html)
     - 训练集为50000张图片
     - 测试集为10000张图片
     
