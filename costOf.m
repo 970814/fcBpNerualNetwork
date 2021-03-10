@@ -9,22 +9,42 @@ function [cost] = costOf(X,y,weights,biases,L)
     a = X;
     for l = 2:L,
         z = weights{l} * a + biases{l};
-
-        a = sigmoid(z);
+        if l < L,
+            a = sigmoid(z);
+        else
+            % 最后一层不应用sigmoid函数
+%            进行softmax 映射转换成概率分布
+%            z 是10*m的矩阵
+            t = e.^(z);
+%            归一化
+            a = t ./ sum(t,1);
+        end;
     end;
+%    添加softmax层
+
+
+
 %    样本数量
     m = size(a,2);
 %    cross-entropy 计算 损失函数
 %    cost = sum(sum(-y .* log(a) - (1 - y) .* log(1 - a))) / m ;
 
 % 因为一般的cross-entropy 写法将导致 出现0*Inf  = NaN ，改进成分段计算
+%    y2 = y(:);
+%    a2 = a(:);
+%    eq0 = find(y2==0);
+%    neq0 = find(y2~=0);
+%    eq0Cost = - (1 - y2(eq0)) .* log(1 - a2(eq0));
+%    neq0Cost = - y2(neq0) .* log(a2(neq0));
+%    cost = (sum (eq0Cost) + sum(neq0Cost))/m;
+
+% softmax 对应的损失函数对于单个样本 cost = -sum(y .* log(a)),为了加快运算，实际上这只是单个项并非累加项，
+%因为只有y_k为1,cost = -y_k *log(a_k) = -log(a_k),
     y2 = y(:);
     a2 = a(:);
-    eq0 = find(y2==0);
-    neq0 = find(y2~=0);
-    eq0Cost = - (1 - y2(eq0)) .* log(1 - a2(eq0));
-    neq0Cost = - y2(neq0) .* log(a2(neq0));
-    cost = (sum (eq0Cost) + sum(neq0Cost))/m;
+    eq1 = find(y2==1);
+    cost = sum(sum(-log(a2(eq1))))/m;
+
 % L2正则化
     lambda = 0.00000001;
     regularizationTerm = 0;
