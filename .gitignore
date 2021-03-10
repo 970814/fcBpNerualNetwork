@@ -1,0 +1,5 @@
+*.txt
+octave-workspace
+report/*
+data/*
+.DS_Store
