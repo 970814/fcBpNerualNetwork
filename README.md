@@ -9,7 +9,28 @@
     - 测试集为10000张图片
     
 2. 达到的效果
-   拟合度99.70%,测试集上 **准确率98.38%** ，在训练了28个epoth获得
+   - 拟合度99.70%,测试集上 **准确率98.38%** ，在训练了28个epoth获得
+
+
+ 训练集上cost 关于 迭代次数 的变化曲线
+
+<img width="492" alt="" src="https://user-images.githubusercontent.com/19931702/110574313-db0c6700-8197-11eb-8280-4bbc50c84a1f.png">
+
+ 训练集和测试上的错误率关于 迭代epoths次数的变化曲线
+   
+<img width="489" alt="" src="https://user-images.githubusercontent.com/19931702/110574304-d5168600-8197-11eb-84b9-d5d951c7cad5.png">
+
+训练集和测试上的准确率关于 迭代epoths次数的变化曲线
+
+<img width="490" alt="" src="https://user-images.githubusercontent.com/19931702/110574297-d21b9580-8197-11eb-9dc2-939399adb03d.png">
+
+训练集和测试上的cost关于 迭代epoths次数的变化曲线
+
+<img width="491" alt="" src="https://user-images.githubusercontent.com/19931702/110574290-ce880e80-8197-11eb-8022-67940cd3962b.png">
+
+训练每个epoth所花费的时间曲线变化
+
+<img width="507" alt="" src="https://user-images.githubusercontent.com/19931702/110574274-c9c35a80-8197-11eb-8783-3a545fc0c846.png">
 
 
 
@@ -74,4 +95,13 @@
  
  
     
+    
+    
+    
+
+
+
+
+
+
     
