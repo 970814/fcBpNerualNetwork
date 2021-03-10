@@ -73,4 +73,6 @@
 7. 对输出层采用softmax层，得到每个类别概率分布的输出
 
 
+### 反向传播算法中4个重要方程
+![1](http://latex.codecogs.com/svg.latex?\\delta^{L}=\\frac{\\partial C}{\\partial z^{L}}=a^L-y)
 
