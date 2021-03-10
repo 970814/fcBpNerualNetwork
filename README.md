@@ -35,6 +35,8 @@
 为**数字4的概率是100%**，因此本次预测结果为4，正确。
 
 
+4. 学习曲线
+
  训练集上cost 关于 迭代次数 的变化曲线
 
 <img width="492" alt="" src="https://user-images.githubusercontent.com/19931702/110574313-db0c6700-8197-11eb-8280-4bbc50c84a1f.png">
